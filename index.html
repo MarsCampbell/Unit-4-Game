@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>Pokemon</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Pokemon Stadium</h1>
+        </header>
+
+        <div id="selectionArea">
+            <!-- pokemon cards share class but have their own IDs -->
+
+            <div id="pikachu" class="pokemon">
+                <img src="pikachu.png" height="200px" width="200px">
+                <span id="pikachuHp">100</span>
+                </div>
+            
+
+            <div id="bulbasaur" class="pokemon">
+                    <img src="bulbasaur.jpg" height="200px" width="200px">
+                    <span id="bulbasaurHp">200</span>
+                </div>
+
+            <div id="charmander" class="pokemon">
+                    <img src="charmander.png" height="200px" width="200px">
+                    <span id="charmanderHp">150</span>
+                </div>
+
+             <div id="squirtle" class="pokemon">
+                    <img src="squirtle.jpg" height="200px" width="200px">
+                    <span id="squirtleHp">120</span>
+                </div>
+
+            <div id="mario" class="pokemon">
+                    <img src="mario.jpg" height="200px" width="200px">
+                    <span id="marioHp">300</span>
+                </div>
+
+
+
+        </div>
+
+        <!-- Enemies are moved here upon selection-->
+
+        <div id="defenderArea">
+
+        </div>
+
+        <!-- The players pokemon goes here-->
+
+        <div id="playerArea">
+
+                <button type="button" id="attackBtn" class="btn btn-primary">Attack</button>
+
+        </div>
+
+        <!-- Scripts & jQuery -->
+
+        <script src="game.js" type="javascript"></script>
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    </body>
+</html> 
