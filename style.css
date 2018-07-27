@@ -1,0 +1,52 @@
+.pokemon {
+
+    display: inline;
+    margin: 5px;
+    border: 10px;
+    padding: 5px;
+   
+
+}
+
+header {
+
+    height: 80px;
+    background-color: blue;
+    position: top;
+    width: 100%;
+}
+
+h1 {
+
+    color: black;
+    text-align: center;
+}
+
+#selectionArea {
+
+    background-color: pink;
+
+}
+
+#defenderArea {
+
+    background-color: green;
+    height: 256px;
+}
+
+#playerArea {
+
+    background-color: purple;
+    height: 256px;
+}
+
+#attackBtn {
+
+    margin: 15px;
+    padding: 15px;
+}
+
+span {
+
+    position: bottom;
+}
