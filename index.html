@@ -4,6 +4,7 @@
 
         <meta charset="utf-8">
         <title>Pokemon</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
@@ -19,28 +20,28 @@
 
             <div id="pikachu" class="pokemon">
                 <img src="pikachu.png" height="200px" width="200px">
-                <span id="pikachuHp">100</span>
+                <span id="pikachuHp"></span>
                 </div>
             
 
             <div id="bulbasaur" class="pokemon">
                     <img src="bulbasaur.jpg" height="200px" width="200px">
-                    <span id="bulbasaurHp">200</span>
+                    <span id="bulbasaurHp"></span>
                 </div>
 
             <div id="charmander" class="pokemon">
                     <img src="charmander.png" height="200px" width="200px">
-                    <span id="charmanderHp">150</span>
+                    <span id="charmanderHp"></span>
                 </div>
 
              <div id="squirtle" class="pokemon">
                     <img src="squirtle.jpg" height="200px" width="200px">
-                    <span id="squirtleHp">120</span>
+                    <span id="squirtleHp"></span>
                 </div>
 
             <div id="mario" class="pokemon">
                     <img src="mario.jpg" height="200px" width="200px">
-                    <span id="marioHp">300</span>
+                    <span id="marioHp"></span>
                 </div>
 
 
@@ -57,16 +58,78 @@
 
         <div id="playerArea">
 
-                <button type="button" id="attackBtn" class="btn btn-primary">Attack</button>
+                <input id ="attackBtn" type="button" value="click me" onclick="myFunction()" />
+                
 
         </div>
 
         <!-- Scripts & jQuery -->
 
-        <script src="game.js" type="javascript"></script>
+
         <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+
+  <script>
+
+
+  // on click pokemon are moved to defenderArea and playerArea
+  $(document).ready(function() {
+    $('#pikachu').click(function() {  
+        $("#pikachu").appendTo("#defenderArea");
+    });
+});
+
+$(document).ready(function() {
+    $('#squirtle').click(function() {  
+        $("#squirtle").appendTo("#playerArea");
+    });
+});
+
+$(document).ready(function() {
+    $('#charmander').click(function() {  
+        $("#charmander").appendTo("#playerArea");
+    });
+});
+
+$(document).ready(function() {
+    $('#bulbasaur').click(function() {  
+        $("#bulbasaur").appendTo("#defenderArea");
+    });
+});
+
+$(document).ready(function() {
+    $('#mario').click(function() {  
+        $("#mario").appendTo("#playerArea");
+    });
+});
+
+// Pokemon health and attack stats
+
+    var pikaHp = 150;
+    var squirtHp = 200;
+    var charHp = 120;
+    var bulbHp = 190;
+    var marioHp = 300;
+
+    var pikaAtk = 20;
+    var squirtAtk = 10;
+    var charAtk = 30;
+    var bulbAtk = 15;
+    var marioAtk = 20;
+
+
+// writing pokemon health to inner html
+    document.getElementById("pikachuHp").innerHTML = pikaHp;
+    document.getElementById("squirtleHp").innerHTML = squirtHp;
+    document.getElementById("charmanderHp").innerHTML = charHp;
+    document.getElementById("bulbasaurHp").innerHTML = squirtHp;
+    document.getElementById("marioHp").innerHTML = marioHp;
+
+
+
+  </script>
     </body>
 </html> 
+
