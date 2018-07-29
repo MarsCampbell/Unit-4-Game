@@ -1,5 +1,4 @@
-
- // on click pokemon are moved to defenderArea if there is already a pokemon in playerArea
+   // on click pokemon are moved to defenderArea if there is already a pokemon in playerArea
   
  
  $(document).ready(function() {
@@ -112,7 +111,10 @@ $(document).ready(function() {
   var y = 1;
   var z = 1;
 
-  var q = 0;
+  var a = 0;
+  var b = 0;
+  var c = 0;
+  var d = 0;
 
   
 
@@ -248,39 +250,40 @@ if (squirtHp <= 0) {
   document.getElementById("squirtle").innerHTML = null;
   squirtPlay = false;
   squirtDef = false;
-  q++;
+  a = 1;
 }
 if (charHp <= 0) {
  $("#charmander").appendTo("#selectionArea");
   document.getElementById("charmander").innerHTML = null;
   charPlay = false;
   charDef = false;
-  q++;
+  b = 1;
 }
 if (marioHp <= 0) {
  $("#mario").appendTo("#selectionArea");
   document.getElementById("mario").innerHTML = null;
   marioPlay = false;
   marioDef = false;
-  q++;
+  c = 1;
 }
 if (bulbHp <= 0) {
  $("#bulbasaur").appendTo("#selectionArea");
   document.getElementById("bulbasaur").innerHTML = null;
   bulbPlay = false;
   bulbDef = false;
-  q++;
+  d = 1;
 }
 
 
-if (q > 3) {
+if (a + b + c + d == 3) {
       
       $("#mewtwo").appendTo("#defenderArea");
       mewDef = true;
-      if (mewHp <= 0) {
-          alert("you beat mewtwo!")
+     
+  }
+  if (mewHp <= 0) {
+          alert("you beat mewtwo!");
           document.getElementById("mewtwo").innerHTML = null;
       }
-  }
 
 });
