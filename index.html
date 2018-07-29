@@ -18,10 +18,6 @@
         <div id="selectionArea">
             <!-- pokemon cards share class but have their own IDs -->
 
-            <div id="pikachu" class="pokemon">
-                <img src="pikachu.png" height="200px" width="200px">
-                <span id="pikachuHp"></span>
-                </div>
             
 
             <div id="bulbasaur" class="pokemon">
@@ -58,7 +54,8 @@
 
         <div id="playerArea">
 
-                <input id ="attackBtn" type="button" value="click me" onclick="myFunction()" />
+                <input id ="attackBtn" type="button" value="Mario Attack" onclick="myFunction()" />
+                <input id ="attackBtn2" type="button" value="Bulbasaur Attack" onclick="myFunction()" />
                 
 
         </div>
@@ -71,65 +68,11 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
-  <script>
+ 
 
+<script type="text/javascript" src="game.js"></script>
 
-  // on click pokemon are moved to defenderArea and playerArea
-  $(document).ready(function() {
-    $('#pikachu').click(function() {  
-        $("#pikachu").appendTo("#defenderArea");
-    });
-});
-
-$(document).ready(function() {
-    $('#squirtle').click(function() {  
-        $("#squirtle").appendTo("#playerArea");
-    });
-});
-
-$(document).ready(function() {
-    $('#charmander').click(function() {  
-        $("#charmander").appendTo("#playerArea");
-    });
-});
-
-$(document).ready(function() {
-    $('#bulbasaur').click(function() {  
-        $("#bulbasaur").appendTo("#defenderArea");
-    });
-});
-
-$(document).ready(function() {
-    $('#mario').click(function() {  
-        $("#mario").appendTo("#playerArea");
-    });
-});
-
-// Pokemon health and attack stats
-
-    var pikaHp = 150;
-    var squirtHp = 200;
-    var charHp = 120;
-    var bulbHp = 190;
-    var marioHp = 300;
-
-    var pikaAtk = 20;
-    var squirtAtk = 10;
-    var charAtk = 30;
-    var bulbAtk = 15;
-    var marioAtk = 20;
-
-
-// writing pokemon health to inner html
-    document.getElementById("pikachuHp").innerHTML = pikaHp;
-    document.getElementById("squirtleHp").innerHTML = squirtHp;
-    document.getElementById("charmanderHp").innerHTML = charHp;
-    document.getElementById("bulbasaurHp").innerHTML = squirtHp;
-    document.getElementById("marioHp").innerHTML = marioHp;
-
-
-
-  </script>
     </body>
 </html> 
+
 
