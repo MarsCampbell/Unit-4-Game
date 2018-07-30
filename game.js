@@ -236,7 +236,7 @@ else if (bulbPlay == true && mewDef == true) {
  bulbHp = bulbHp - mewCounter;
 }
 else if (squirtPlay == true && mewDef == true) {
- document.getElementById("mewtwoHp").innerHTML = mewHp - squirtAtk;
+ document.getElementById("mewHp").innerHTML = mewHp - squirtAtk;
  mewHp = mewHp - squirtAtk;
  x++; squirtAtk = 25 * x;
  document.getElementById("squirtleHp").innerHTML = squirtHp - mewCounter;
