@@ -275,7 +275,7 @@ if (bulbHp <= 0) {
 }
 
 
-if (a + b + c + d >= 3) {
+if (a + b + c + d == 3) {
       
       $("#mewtwo").appendTo("#defenderArea");
       mewDef = true;
@@ -284,5 +284,8 @@ if (a + b + c + d >= 3) {
           document.getElementById("mewtwo").innerHTML = null;
       }
   }
+ if (a + b + c + d == 4) {
+  alert("you lose!)
+        }
 
 });
