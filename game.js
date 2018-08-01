@@ -122,7 +122,7 @@ $(document).ready(function() {
   
   document.getElementById("squirtleHp" ).innerHTML = squirtHp;
   document.getElementById("charmanderHp").innerHTML = charHp;
-  document.getElementById("bulbasaurHp").innerHTML = squirtHp;
+  document.getElementById("bulbasaurHp").innerHTML = bulbHp;
   document.getElementById("marioHp").innerHTML = marioHp;
   document.getElementById("mewHp").innerHTML = mewHp;
 
@@ -284,8 +284,8 @@ if (a + b + c + d == 3) {
           document.getElementById("mewtwo").innerHTML = null;
       }
   }
- if (a + b + c + d == 4) {
-  alert("you lose!)
-        }
 
+  if (a + b + c + d == 4) {
+    alert("you lose!")
+  }
 });
