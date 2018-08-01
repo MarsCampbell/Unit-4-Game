@@ -285,7 +285,5 @@ if (a + b + c + d == 3) {
       }
   }
 
-  if (a + b + c + d == 4) {
-    alert("you lose!")
-  }
+ 
 });
